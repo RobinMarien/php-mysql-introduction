@@ -8,7 +8,13 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Robin Mariën">
+    <link rel="icon" type="image/png" sizes="16x16" href="">
     <title>Login form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
 </head>
 <body>
 
@@ -26,7 +32,10 @@
     <br>
     <br>
     <label for="gender">Gender:</label>
-    <input type="text" name="gender">
+    <select name="gender">
+        <option value="m">Male</option>
+        <option value="f">Female</option>
+    </select>
     <br>
     <br>
     <label for="linkedin">LinkedIn:</label>
@@ -61,8 +70,9 @@
     <input type="text" name="quote_author">
     <br>
     <br>
-    <button>submit</button>
+    <button>Submit</button>
 </form>
+<br>
 
 </body>
 </html>
