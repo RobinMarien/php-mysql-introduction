@@ -58,7 +58,7 @@
     <input type="text" name="avatar">
     <br>
     <br>
-    <label for="video">Video:</label>
+    <label for="video">Youtube video:</label>
     <input type="text" name="video">
     <br>
     <br>
