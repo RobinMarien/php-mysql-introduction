@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 
 require 'connection.php';
 require 'insert.php';
-require 'profile.php';
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $connection = openConnection();
@@ -48,9 +48,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Document</title>
 </head>
 <body>
-    <table>
+    <table class="text-center">
         <thead>
-        <tr>
+        <tr class="font-weight-bold">
             <td>First Name</td>
             <td>Last Name</td>
             <td>Email</td>
@@ -61,7 +61,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <tbody>
         <?php
         $sqlTable = 'SELECT first_name, last_name, email, preferred_language, id FROM student ORDER BY ID';
-        $connection = openConnection();
         foreach ($connection->query($sqlTable) as $row): ?>
             <tr>
                 <td><?php echo $row['first_name'] ?></td>
